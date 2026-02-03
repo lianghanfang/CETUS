@@ -1,0 +1,37 @@
+2025-08-26 20:01:08,901 - INFO - Loading datasets...
+2025-08-26 20:01:09,746 - INFO - Dataset sizes - Train: 12467, Val: 2935
+2025-08-26 20:01:09,746 - INFO - Feature dimension: 8
+2025-08-26 20:01:10,288 - INFO - Model type: SpatialAwareEventMamba
+2025-08-26 20:01:10,288 - INFO - Total parameters: 67,140
+2025-08-26 20:01:10,288 - INFO - Trainable parameters: 67,140
+2025-08-26 20:01:10,290 - INFO - Starting training...
+2025-08-26 20:05:06,773 - INFO - Epoch 1: train_loss=0.0122, train_acc=0.9766, val_loss=0.0084, val_acc=0.9850
+2025-08-26 20:05:06,784 - INFO - Saved best model with val_loss=0.0084
+2025-08-26 20:08:56,191 - INFO - Epoch 2: train_loss=0.0080, train_acc=0.9868, val_loss=0.0072, val_acc=0.9886
+2025-08-26 20:08:56,201 - INFO - Saved best model with val_loss=0.0072
+2025-08-26 20:12:46,410 - INFO - Epoch 3: train_loss=0.0072, train_acc=0.9885, val_loss=0.0069, val_acc=0.9899
+2025-08-26 20:12:46,418 - INFO - Saved best model with val_loss=0.0069
+2025-08-26 20:16:36,873 - INFO - Epoch 4: train_loss=0.0066, train_acc=0.9893, val_loss=0.0066, val_acc=0.9904
+2025-08-26 20:16:36,879 - INFO - Saved best model with val_loss=0.0066
+2025-08-26 20:20:28,010 - INFO - Epoch 5: train_loss=0.0061, train_acc=0.9898, val_loss=0.0065, val_acc=0.9901
+2025-08-26 20:20:28,016 - INFO - Saved best model with val_loss=0.0065
+2025-08-26 20:24:19,794 - INFO - Epoch 6: train_loss=0.0057, train_acc=0.9901, val_loss=0.0065, val_acc=0.9903
+2025-08-26 20:24:19,801 - INFO - Saved best model with val_loss=0.0065
+2025-08-26 20:28:10,047 - INFO - Epoch 7: train_loss=0.0055, train_acc=0.9903, val_loss=0.0062, val_acc=0.9905
+2025-08-26 20:28:10,054 - INFO - Saved best model with val_loss=0.0062
+2025-08-26 20:32:03,468 - INFO - Epoch 8: train_loss=0.0054, train_acc=0.9905, val_loss=0.0060, val_acc=0.9908
+2025-08-26 20:32:03,476 - INFO - Saved best model with val_loss=0.0060
+2025-08-26 20:36:01,266 - INFO - Epoch 9: train_loss=0.0053, train_acc=0.9906, val_loss=0.0058, val_acc=0.9911
+2025-08-26 20:36:01,272 - INFO - Saved best model with val_loss=0.0058
+2025-08-26 20:40:12,125 - INFO - Epoch 10: train_loss=0.0052, train_acc=0.9907, val_loss=0.0059, val_acc=0.9909
+2025-08-26 20:44:21,098 - INFO - Epoch 11: train_loss=0.0051, train_acc=0.9907, val_loss=0.0062, val_acc=0.9909
+2025-08-26 20:48:20,036 - INFO - Epoch 12: train_loss=0.0050, train_acc=0.9908, val_loss=0.0064, val_acc=0.9908
+2025-08-26 20:52:30,265 - INFO - Epoch 13: train_loss=0.0049, train_acc=0.9909, val_loss=0.0054, val_acc=0.9912
+2025-08-26 20:52:30,273 - INFO - Saved best model with val_loss=0.0054
+2025-08-26 20:56:36,785 - INFO - Epoch 14: train_loss=0.0048, train_acc=0.9910, val_loss=0.0062, val_acc=0.9908
+2025-08-26 21:00:45,134 - INFO - Epoch 15: train_loss=0.0047, train_acc=0.9910, val_loss=0.0059, val_acc=0.9911
+2025-08-26 21:04:59,042 - INFO - Epoch 16: train_loss=0.0046, train_acc=0.9912, val_loss=0.0062, val_acc=0.9910
+2025-08-26 21:08:58,555 - INFO - Epoch 17: train_loss=0.0046, train_acc=0.9912, val_loss=0.0058, val_acc=0.9911
+2025-08-26 21:13:04,816 - INFO - Epoch 18: train_loss=0.0045, train_acc=0.9914, val_loss=0.0062, val_acc=0.9911
+2025-08-26 21:13:04,817 - INFO - Early stopping triggered after 18 epochs.
+2025-08-26 21:13:04,817 - INFO - Training completed!

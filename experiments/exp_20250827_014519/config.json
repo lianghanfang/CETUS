@@ -1,0 +1,80 @@
+{
+  "dataset": {
+    "train_dir": "./EV-UAV-dataset/EV-UAV-dataset/train",
+    "val_dir": "./EV-UAV-dataset/EV-UAV-dataset/val",
+    "test_dir": "./EV-UAV-dataset/EV-UAV-dataset/test",
+    "chunk_size": 2000,
+    "overlap": 0,
+    "min_chunk_size": 2000,
+    "use_chunking": true,
+    "window_size": 4,
+    "window_stride": 2,
+    "coordinate_system": "normalized",
+    "causal_history_len": 1000,
+    "norm_stats_path": "norm_stats.json"
+  },
+  "features": {
+    "base_features": {
+      "x": true,
+      "y": true,
+      "timestamp": true,
+      "polarity": true
+    },
+    "derived_features": {
+      "relative_time": true,
+      "polarity_encoded": true,
+      "event_rate": true
+    },
+    "rate_window_past": 9,
+    "normalization": {
+      "normalize_coords": true,
+      "normalize_features": true,
+      "features_to_normalize": [
+        "timestamp",
+        "relative_time",
+        "event_rate"
+      ],
+      "features_no_normalize": [
+        "polarity",
+        "polarity_pos",
+        "polarity_neg",
+        "x",
+        "y"
+      ]
+    }
+  },
+  "model": {
+    "type": "SpatialAwareEventMamba",
+    "num_classes": 2,
+    "hidden_dim": 128,
+    "k_neighbors": 16,
+    "spatial_radius": 1.0,
+    "causal_knn": true,
+    "mamba_blocks": 1,
+    "state_dim": 16,
+    "expand": 2,
+    "dropout_rate": 0.1
+  },
+  "training": {
+    "batch_size": 8,
+    "num_epochs": 70,
+    "learning_rate": 0.0001,
+    "weight_decay": 1e-05,
+    "gradient_clip": 1.0,
+    "early_stopping_patience": 5,
+    "focal_loss_alpha": 0.5,
+    "focal_loss_gamma": 2.0
+  },
+  "inference": {
+    "checkpoint_path": "best_model.pth",
+    "save_txt_path": "predictions.txt",
+    "threshold": 0.5,
+    "chunk_size": 2000,
+    "knn_history": 400,
+    "use_streaming": false,
+    "step_k": 1,
+    "causal_knn": true,
+    "device": "cuda"
+  },
+  "seed": 42
+}

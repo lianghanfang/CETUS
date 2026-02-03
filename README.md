@@ -1,3 +1,5 @@
+# 初始版本 新版本整理完成后上传
+
 python .\ablation\experiments\run_ablation.py --config .\configs\base_config.json --output ablation_results --experiment spatial --spatial-encoders "knn_base"
 
 
